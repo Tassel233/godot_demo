@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyc22el8u2hi5"]
+
+[ext_resource type="Script" path="res://inventory/slot/InventorySlot.gd" id="1_bqh2l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3sj8b"]
+
+[node name="InventorySlot" type="Control"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 110.0
+offset_bottom = 110.0
+script = ExtResource("1_bqh2l")
+
+[node name="OuterBorder" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="OuterBorder"]
+position = Vector2(51, 53)
+scale = Vector2(4, 4)
+
+[node name="amount" type="Label" parent="OuterBorder"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 68.0
+offset_right = 97.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 23
+horizontal_alignment = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3sj8b")
+disabled = true
+button_mask = 3
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

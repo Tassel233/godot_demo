@@ -1,0 +1,9 @@
+res://character/scene/player1.tscn
+res://inventory/item/item.gd
+res://item/apple.tres
+res://item/tree.tres
+res://item/blue.tres
+res://item/purple.tres
+res://inventory/item/inventory_item.tscn
+res://main.tscn
+res://character/scirpt/player1.gd

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://di5peyky20nh3"]
+
+[ext_resource type="Script" path="res://inventory/base/item_class.gd" id="1_7k5u4"]
+[ext_resource type="Script" path="res://bullet/strategy/bullet_arc_strategy.gd" id="2_2slr3"]
+[ext_resource type="Texture2D" uid="uid://dw58s6pk6nwrj" path="res://assets/bule.png" id="3_ye0oq"]
+
+[sub_resource type="Resource" id="Resource_ocxjc"]
+script = ExtResource("2_2slr3")
+
+[resource]
+script = ExtResource("1_7k5u4")
+name = "hourglass"
+texture = ExtResource("3_ye0oq")
+description = "hourglass"
+effect = "arc -20"
+strategy = SubResource("Resource_ocxjc")

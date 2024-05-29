@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://bagl4o5bl0880"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_3ckp1"]
+[ext_resource type="PackedScene" uid="uid://dip47r67oxpe7" path="res://character/scene/player1.tscn" id="1_retat"]
+[ext_resource type="PackedScene" uid="uid://sk26bec2go4s" path="res://inventory/item/inventory_item.tscn" id="2_73w0f"]
+[ext_resource type="Resource" uid="uid://cq0vgwvnfa13v" path="res://item/apple.tres" id="4_awop7"]
+[ext_resource type="Resource" uid="uid://dal3iuod3lh4b" path="res://item/tree.tres" id="5_rujjw"]
+[ext_resource type="Resource" uid="uid://di5peyky20nh3" path="res://item/blue.tres" id="5_toywh"]
+[ext_resource type="PackedScene" uid="uid://d1tv6f8o2h182" path="res://inventory/inventoryui/InventoryUI.tscn" id="6_exwb5"]
+[ext_resource type="Resource" uid="uid://dpuquhmen35fy" path="res://item/purple.tres" id="6_whtgj"]
+
+[node name="Main" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_3ckp1")
+
+[node name="Player1" parent="." instance=ExtResource("1_retat")]
+position = Vector2(894, 241)
+
+[node name="InventoryItem1" parent="." instance=ExtResource("2_73w0f")]
+position = Vector2(100, 100)
+item = ExtResource("4_awop7")
+
+[node name="InventoryItem2" parent="." instance=ExtResource("2_73w0f")]
+position = Vector2(100, 200)
+item = ExtResource("4_awop7")
+
+[node name="InventoryItem3" parent="." instance=ExtResource("2_73w0f")]
+position = Vector2(98, 281)
+item = ExtResource("5_toywh")
+
+[node name="InventoryItem4" parent="." instance=ExtResource("2_73w0f")]
+position = Vector2(103, 382)
+item = ExtResource("5_toywh")
+
+[node name="InventoryItem5" parent="." instance=ExtResource("2_73w0f")]
+position = Vector2(388, 97)
+item = ExtResource("6_whtgj")
+
+[node name="InventoryItem6" parent="." instance=ExtResource("2_73w0f")]
+position = Vector2(392, 198)
+item = ExtResource("6_whtgj")
+
+[node name="InventoryItem7" parent="." instance=ExtResource("2_73w0f")]
+position = Vector2(390, 276)
+item = ExtResource("5_rujjw")
+
+[node name="InventoryItem8" parent="." instance=ExtResource("2_73w0f")]
+position = Vector2(393, 376)
+item = ExtResource("5_rujjw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="InventoryUI" parent="CanvasLayer" instance=ExtResource("6_exwb5")]
+process_mode = 3
+visible = false

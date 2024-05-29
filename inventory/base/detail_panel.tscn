@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://c71doyws7clcx"]
+
+[node name="DetailPanel" type="ColorRect"]
+offset_right = 264.0
+offset_bottom = 165.0
+color = Color(0, 0, 0, 1)
+
+[node name="ItemName" type="Label" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 50.0
+offset_bottom = 23.0
+text = "name
+"
+
+[node name="ItemDescription" type="Label" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 50.0
+offset_right = 97.0
+offset_bottom = 73.0
+text = "description
+"
+
+[node name="ItemEffect" type="Label" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 100.0
+offset_right = 50.0
+offset_bottom = 123.0
+text = "effect"

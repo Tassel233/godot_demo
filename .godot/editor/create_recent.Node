@@ -1,0 +1,15 @@
+Label
+TextEdit
+CollisionShape2D
+Sprite2D
+CharacterBody2D
+TextureRect
+Panel
+ColorRect
+GridContainer
+Button
+Control
+Area2D
+Node2D
+Node
+CanvasLayer

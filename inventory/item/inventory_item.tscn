@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://sk26bec2go4s"]
+
+[ext_resource type="Script" path="res://inventory/item/item.gd" id="1_bln55"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rhyyr"]
+radius = 3.0
+
+[node name="InventoryItem" type="Node2D" groups=["item"]]
+scale = Vector2(3, 3)
+script = ExtResource("1_bln55")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_rhyyr")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 13.6667
+offset_top = -7.66667
+offset_right = 34.6667
+offset_bottom = 6.33333
+theme_override_font_sizes/font_size = 9
+text = "
+"
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

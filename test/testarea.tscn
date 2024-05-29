@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgf8c3wuxgsxn"]
+
+[ext_resource type="Script" path="res://test/testarea.gd" id="1_6b16l"]
+[ext_resource type="Texture2D" uid="uid://cifruswnky1xs" path="res://assets/icon.svg" id="2_duqay"]
+[ext_resource type="Script" path="res://test/Sprite2D.gd" id="3_jat1i"]
+[ext_resource type="PackedScene" uid="uid://c71doyws7clcx" path="res://inventory/base/detail_panel.tscn" id="3_ogb3m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3pwyl"]
+size = Vector2(126, 126)
+
+[node name="Testarea" type="Area2D"]
+position = Vector2(288, 264)
+script = ExtResource("1_6b16l")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_duqay")
+script = ExtResource("3_jat1i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3pwyl")
+
+[node name="DetailPanel" parent="." instance=ExtResource("3_ogb3m")]
+visible = false
+offset_left = 3.0
+offset_top = -162.0
+offset_right = 267.0
+offset_bottom = 3.0

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://yax3p3kj5jtl"]
+
+[ext_resource type="Script" path="res://inventory/item_bar_slot/ItemBarSlot.gd" id="1_13oy1"]
+
+[node name="ItemBarSlot" type="Panel"]
+custom_minimum_size = Vector2(100, 100)
+script = ExtResource("1_13oy1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(50, 50)
+scale = Vector2(4, 4)
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://dpuquhmen35fy"]
+
+[ext_resource type="Script" path="res://inventory/base/item_class.gd" id="1_k5ufy"]
+[ext_resource type="Script" path="res://bullet/strategy/bullet_rate_strategy.gd" id="2_tn3nh"]
+[ext_resource type="Texture2D" uid="uid://dbwlw1n26r1pi" path="res://assets/purple.png" id="3_8hmg6"]
+
+[sub_resource type="Resource" id="Resource_7uf3s"]
+script = ExtResource("2_tn3nh")
+
+[resource]
+script = ExtResource("1_k5ufy")
+name = "insect"
+texture = ExtResource("3_8hmg6")
+description = "insect"
+effect = "rate +3"
+strategy = SubResource("Resource_7uf3s")

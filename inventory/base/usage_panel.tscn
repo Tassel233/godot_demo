@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://12dgvfy0xkw4"]
+
+[ext_resource type="Script" path="res://inventory/base/usage_panel.gd" id="1_d2ipw"]
+
+[node name="UsagePanel" type="ColorRect"]
+offset_left = 336.0
+offset_top = 245.0
+offset_right = 454.0
+offset_bottom = 365.0
+script = ExtResource("1_d2ipw")
+
+[node name="UseButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 60.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 25
+text = "Onload"
+
+[node name="DropButton" type="Button" parent="."]
+custom_minimum_size = Vector2(118, 60)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -43.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Drop"
+
+[connection signal="pressed" from="UseButton" to="." method="_on_use_button_pressed"]
+[connection signal="pressed" from="DropButton" to="." method="_on_drop_button_pressed"]

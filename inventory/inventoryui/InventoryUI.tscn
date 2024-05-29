@@ -1,0 +1,122 @@
+[gd_scene load_steps=6 format=3 uid="uid://d1tv6f8o2h182"]
+
+[ext_resource type="Script" path="res://inventory/inventoryui/InventoryUI.gd" id="1_vdlo4"]
+[ext_resource type="PackedScene" uid="uid://cyc22el8u2hi5" path="res://inventory/slot/InventorySlot.tscn" id="2_ir6k1"]
+[ext_resource type="PackedScene" uid="uid://c71doyws7clcx" path="res://inventory/base/detail_panel.tscn" id="3_2w2k1"]
+[ext_resource type="PackedScene" uid="uid://12dgvfy0xkw4" path="res://inventory/base/usage_panel.tscn" id="4_w11n8"]
+[ext_resource type="PackedScene" uid="uid://yax3p3kj5jtl" path="res://inventory/item_bar_slot/ItemBarSlot.tscn" id="5_m8sg6"]
+
+[node name="InventoryUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_vdlo4")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 182.0
+offset_top = 121.0
+offset_right = 982.0
+offset_bottom = 521.0
+color = Color(0.698039, 0.768627, 0.729412, 1)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 116.0
+offset_right = 897.0
+offset_bottom = 476.0
+columns = 6
+
+[node name="InventorySlot" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot2" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot3" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot4" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot5" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot6" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot7" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot8" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot9" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot10" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot11" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot12" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot13" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot14" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot15" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot16" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot17" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="InventorySlot18" parent="GridContainer" instance=ExtResource("2_ir6k1")]
+layout_mode = 2
+
+[node name="DetailPanel" parent="." instance=ExtResource("3_2w2k1")]
+visible = false
+layout_mode = 0
+offset_left = 4.0
+offset_top = 115.0
+offset_right = 268.0
+offset_bottom = 280.0
+
+[node name="UsagePanel" parent="." instance=ExtResource("4_w11n8")]
+visible = false
+layout_mode = 0
+offset_left = 315.0
+offset_top = 230.0
+offset_right = 433.0
+offset_bottom = 350.0
+
+[node name="ItemBarContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 490.0
+offset_right = 837.0
+offset_bottom = 590.0
+columns = 5
+
+[node name="ItemBarSlot" parent="ItemBarContainer" instance=ExtResource("5_m8sg6")]
+layout_mode = 2
+
+[node name="ItemBarSlot2" parent="ItemBarContainer" instance=ExtResource("5_m8sg6")]
+layout_mode = 2
+
+[node name="ItemBarSlot3" parent="ItemBarContainer" instance=ExtResource("5_m8sg6")]
+layout_mode = 2
+
+[node name="ItemBarSlot4" parent="ItemBarContainer" instance=ExtResource("5_m8sg6")]
+layout_mode = 2
+
+[node name="ItemBarSlot5" parent="ItemBarContainer" instance=ExtResource("5_m8sg6")]
+layout_mode = 2

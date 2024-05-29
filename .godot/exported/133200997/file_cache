@@ -1,0 +1,15 @@
+res://bullet/bullet1.tscn::bff809d3426ac934d5bd4b473811ef7f::1716816355::res://.godot/exported/133200997/export-b2e39b6b71fc3e97556382ecb3b81d05-bullet1.scn
+res://bullet/bullet.tscn::cadc8cef07a56d313d9404b109c59955::1716816355::res://.godot/exported/133200997/export-b76706a2aa0e739961a1ea57e3b62984-bullet.scn
+res://character/scene/player1.tscn::2d2cbd0b30668169662442a96d23f771::1716822345::res://.godot/exported/133200997/export-1f4d4a98a2b6eb0e9b61145ea0b0f0de-player1.scn
+res://inventory/base/detail_panel.tscn::d20be86ee7c6f5f27bfa8adc98baa33e::1716216936::res://.godot/exported/133200997/export-0ad6fd73638dcb170393a5fc84f9fd4e-detail_panel.scn
+res://inventory/base/usage_panel.tscn::67b3f90a23e189631a530b146f9a7b0e::1716216936::res://.godot/exported/133200997/export-f62c359f7714408e4cccc6d9436d181a-usage_panel.scn
+res://inventory/inventoryui/InventoryUI.tscn::bd660f446a28f15f6cf19a0ae60e15dd::1716819361::res://.godot/exported/133200997/export-3c735bfce573a3b4ca5fa853ec12727e-InventoryUI.scn
+res://inventory/item/inventory_item.tscn::02e827151b6b9f3afcacffa3a67e0661::1716822346::res://.godot/exported/133200997/export-2cbd73717f502b4bd1511ecfc8a132ec-inventory_item.scn
+res://inventory/item_bar_slot/ItemBarSlot.tscn::a260b0ee21a2c6e99ab5e4c2f09f0933::1716216936::res://.godot/exported/133200997/export-cfa3d1c0baef697b1cba70fb08c15da3-ItemBarSlot.scn
+res://inventory/slot/InventorySlot.tscn::df0dbdf14082d8c569a9e017d966e657::1716127436::res://.godot/exported/133200997/export-1913414945a0e22a9934401d4c2b39e5-InventorySlot.scn
+res://item/apple.tres::a1f4e69947777a5ff14ba1e97d4c61ef::1716820345::res://.godot/exported/133200997/export-7447788059adec61766bf26e6390f76f-apple.res
+res://item/blue.tres::58d41f8cf80fe25f0838b59375a8a3a4::1716821762::res://.godot/exported/133200997/export-690d9bcbc825fe09f58bb817f8a45d07-blue.res
+res://item/purple.tres::c5142380b76e5abb92c1b582b0caecf8::1716821762::res://.godot/exported/133200997/export-3c8850a78917e7b1d28cd844bab3061c-purple.res
+res://item/tree.tres::40730eba8374319dd1d90235589383a8::1716820356::res://.godot/exported/133200997/export-b61120f312168a3cb7964dc5b8adc95f-tree.res
+res://test/testarea.tscn::6ca410f032a9ec54c3d962ef6fbef55b::1715405350::res://.godot/exported/133200997/export-aba8d3aa4c239a4a5ec875ecb1c406f4-testarea.scn
+res://main.tscn::3c447648e0643fe7d8e4617989f45143::1716822346::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn

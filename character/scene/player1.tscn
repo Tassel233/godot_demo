@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://dip47r67oxpe7"]
+
+[ext_resource type="Script" path="res://character/scirpt/player1.gd" id="1_1xmdr"]
+[ext_resource type="Texture2D" uid="uid://cifruswnky1xs" path="res://assets/icon.svg" id="1_bp6to"]
+[ext_resource type="PackedScene" uid="uid://bhdovlg4tjsy4" path="res://bullet/bullet.tscn" id="3_hhfhq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i5p28"]
+size = Vector2(128, 128)
+
+[node name="Player1" type="CharacterBody2D" groups=["player"]]
+process_mode = 1
+scale = Vector2(0.4, 0.4)
+collision_mask = 3
+script = ExtResource("1_1xmdr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_bp6to")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_i5p28")
+
+[node name="InteractUI" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="InteractUI"]
+offset_left = 852.0
+offset_top = 598.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.698039, 1, 1, 0.431373)
+
+[node name="Label" type="Label" parent="InteractUI/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -67.5
+offset_top = -11.5
+offset_right = 67.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 21
+text = "press E to pick up"
+
+[node name="Bullet" parent="." instance=ExtResource("3_hhfhq")]

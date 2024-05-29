@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://cq0vgwvnfa13v"]
+
+[ext_resource type="Script" path="res://inventory/base/item_class.gd" id="1_fb15r"]
+[ext_resource type="Texture2D" uid="uid://v5cjr18camhe" path="res://assets/apple.png" id="2_6djfo"]
+[ext_resource type="Script" path="res://bullet/strategy/bullet_count_strategy.gd" id="2_65ftk"]
+
+[sub_resource type="Resource" id="Resource_c6bq2"]
+script = ExtResource("2_65ftk")
+
+[resource]
+script = ExtResource("1_fb15r")
+name = "item1"
+texture = ExtResource("2_6djfo")
+description = "des1"
+effect = "bullet_count + 1"
+strategy = SubResource("Resource_c6bq2")
